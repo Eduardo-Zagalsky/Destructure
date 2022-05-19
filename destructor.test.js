@@ -13,3 +13,8 @@ describe("One-Line Array Swap with Destructuring", () => {
         expect(arr).toEqual([2, 1]);
     });
 });
+describe("Race Results", () => {
+    it("should accept a single array argument and return an object with the keys first, second, third, and rest.", () => {
+        expect(raceResults(['Tom', 'Margaret', 'Allison', 'David', 'Pierre'])).toEqual({ first: "Tom", second: "Margaret", third: "Allison", rest: ["David", "Pierre"] });
+    });
+});
